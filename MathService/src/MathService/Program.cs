@@ -29,7 +29,7 @@ public  partial class Program
             return forecast;
         });
 
-        app.MapGet("/", () => "MathService is running");
+        app.MapGet("/", () => "MathService v2 is running");
         app.MapGet("/add", (int a, int b) => new { result = MathLogic.Add(a, b) });
         app.MapGet("/multiply", (int a, int b) => new { result = MathLogic.Multiply(a, b) });
 
