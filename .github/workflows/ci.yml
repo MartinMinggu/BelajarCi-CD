@@ -50,4 +50,4 @@ jobs:
         with:
           context: ./MathService
           push: true
-          tags: ghcr.io/martinminggu/mathservice:latest .
+          tags: ghcr.io/martinminggu/mathservice:latest
