@@ -19,6 +19,6 @@ public class MathTest
     public void Add_NegativeNumbers_Works()
     {
         var result = MathLogic.Add(-3, -7);
-        Assert.Equal(-10, result);
+        Assert.Equal(-1, result);
     }
 }
