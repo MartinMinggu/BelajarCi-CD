@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MathService.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34f3fcb4cdcab4ad342acf13d64ea7ee4ac00417")]
 [assembly: System.Reflection.AssemblyProductAttribute("MathService.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MathService.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

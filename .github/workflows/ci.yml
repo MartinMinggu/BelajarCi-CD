@@ -54,3 +54,19 @@ jobs:
           context: ./MathService
           push: true
           tags: ghcr.io/martinminggu/mathservice:latest
+  deploy:
+    runs-on: ubuntu_latest
+    needs: docker
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Checkout Kode
+        uses: actions/checkout@v4
+      
+      - name: Install Railway CLI
+        run: npm  install -g @railway/cli
+        
+      - name: Deploy ke Railway
+        run: railway up --service mathservice
+        working-directory: MathService
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
