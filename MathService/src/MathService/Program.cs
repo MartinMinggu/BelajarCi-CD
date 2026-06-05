@@ -32,6 +32,10 @@ public  partial class Program
         app.MapGet("/", () => "MathService v3  Railway is running");
         app.MapGet("/add", (int a, int b) => new { result = MathLogic.Add(a, b) });
         app.MapGet("/multiply", (int a, int b) => new { result = MathLogic.Multiply(a, b) });
+        app.MapGet("/kurang", (int a, int b) => new { result = MathLogic.Kurang(a, b) });
+        app.MapGet("/bagi", (int a, int b) => new { result = MathLogic.Bagi(a, b) });
+        app.MapGet("/mod", (int a, int b) => new { result = MathLogic.Mod(a, b) });
+        app.MapGet("/cek_ganjil_genap", (int a) => new { result = "Bilangan " + a + " adalah " + MathLogic.GanjilGenap(a) });
 
         app.Run();
     }
