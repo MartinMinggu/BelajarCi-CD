@@ -1,6 +1,8 @@
+using MathService.Services;
+
 namespace MathService.Tests;
 
-public class MathTest
+public class MathServiceTests
 {
     [Fact]
     public void Add_TwoNumber_ReturnsCorrectSum()
@@ -28,4 +30,21 @@ public class MathTest
         var result = MathLogic.Add(-3, -7);
         Assert.Equal(-10, result);
     }
+
+    [Fact]
+    public void Divide_ValidNumbers_ReturnsCorrectResult()
+        => Assert.Equal(2.5, MathLogic.Divide(5, 2));
+
+    [Fact]
+    public void Divide_ByZero_ThrowsException()
+        => Assert.Throws<DivideByZeroException>(() => MathLogic.Divide(10, 0));
+
+    [Theory]
+    [InlineData(2, true)]
+    [InlineData(7, true)]
+    [InlineData(13, true)]
+    [InlineData(4, false)]
+    [InlineData(1, false)]
+    public void IsPrime_ReturnsCorrectResult(int n, bool expected)
+        => Assert.Equal(expected, MathLogic.IsPrime(n));
 }

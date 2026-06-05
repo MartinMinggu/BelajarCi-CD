@@ -26,3 +26,4 @@ D:\Pemrograman\Learning\CICD\MathService\src\MathService\obj\Debug\net8.0\refint
 D:\Pemrograman\Learning\CICD\MathService\src\MathService\obj\Debug\net8.0\MathService.pdb
 D:\Pemrograman\Learning\CICD\MathService\src\MathService\obj\Debug\net8.0\MathService.genruntimeconfig.cache
 D:\Pemrograman\Learning\CICD\MathService\src\MathService\obj\Debug\net8.0\ref\MathService.dll
+D:\Pemrograman\Learning\CICD\MathService\src\MathService\obj\Debug\net8.0\MathService.sourcelink.json

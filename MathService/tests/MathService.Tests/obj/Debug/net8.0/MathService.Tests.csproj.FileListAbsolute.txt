@@ -106,3 +106,4 @@ D:\Pemrograman\Learning\CICD\MathService\tests\MathService.Tests\obj\Debug\net8.
 D:\Pemrograman\Learning\CICD\MathService\tests\MathService.Tests\obj\Debug\net8.0\MathService.Tests.pdb
 D:\Pemrograman\Learning\CICD\MathService\tests\MathService.Tests\obj\Debug\net8.0\MathService.Tests.genruntimeconfig.cache
 D:\Pemrograman\Learning\CICD\MathService\tests\MathService.Tests\obj\Debug\net8.0\ref\MathService.Tests.dll
+D:\Pemrograman\Learning\CICD\MathService\tests\MathService.Tests\obj\Debug\net8.0\MathService.Tests.sourcelink.json
