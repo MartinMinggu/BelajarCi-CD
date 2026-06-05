@@ -31,7 +31,8 @@ public  partial class Program
                 .ToArray();
             return forecast;
         });
-
+        app.MapGet("/", () => "MathService v3  Railway is running");
+       
         app.MapMathEndpoints();
         app.MapStringEndpoints();
         app.MapDateEndpoints();
