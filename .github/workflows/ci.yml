@@ -66,11 +66,8 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Run MathService tests
-        run: dotnet test tests/MathService.Tests
-             --project tests/MathService.Tests
-             --configuration Release
-             --verbosity normal
-             --filter "FullyQualifiedName~MathServiceTests"
+        run: dotnet test tests/MathService.Tests --configuration Release --verbosity normal --filter "FullyQualifiedName~MathServiceTests"
+
         working-directory: MathService
 
   test-string:
